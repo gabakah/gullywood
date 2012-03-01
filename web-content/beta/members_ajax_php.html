@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+<title>jCarousel Examples</title>
+<link href="jcarousel/style.css" rel="stylesheet" type="text/css" />
+
+<!--
+  jQuery library
+-->
+<script type="text/javascript" src="jcarousel/lib/jquery-1.2.1.pack.js"></script>
+
+<!--
+  jCarousel library
+-->
+<script type="text/javascript" src="jcarousel/lib/jquery.jcarousel.pack.js"></script>
+
+<!--
+  jCarousel core stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="jcarousel/lib/jquery.jcarousel.css" />
+
+<!--
+  jCarousel skin stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="jcarousel/skins/ie7/skin.css" />
+
+<script type="text/javascript">
+
+function mycarousel_itemLoadCallback(carousel, state)
+{
+    // Check if the requested items already exist
+    if (carousel.has(carousel.first, carousel.last)) {
+        return;
+    }
+
+    jQuery.get(
+        'members_ajax.php',
+        {
+            first: carousel.first,
+            last: carousel.last
+        },
+        function(xml) {
+            mycarousel_itemAddCallback(carousel, carousel.first, carousel.last, xml);
+        },
+        'xml'
+    );
+};
+
+function mycarousel_itemAddCallback(carousel, first, last, xml)
+{
+    // Set the size of the carousel
+    carousel.size(parseInt(jQuery('total', xml).text()));
+
+    jQuery('movie', xml).each(function(i) {
+//        carousel.add(first + i, mycarousel_getItemHTML(jQuery(this).text()));
+        carousel.add(first + i, mycarousel_getItemHTML(this));
+    });
+};
+
+/**
+ * Item html creation helper.
+ */
+function mycarousel_getItemHTML(item)
+{
+//    return '<img src="' + url + '" width="130" height="130" alt="" />';
+//    return '<a href="' + url + '"><img src="' + url + '" width="130" height="130" alt="" /></a>';
+//    return '<img src="' + url + '" width="130" height="130" alt="" />';
+    return '<a href=../beta/Details.php?movieId='+$('movieId', item).text()+'><img src="'+$('movieImage', item).text()+'" width="130" height="130" alt="" /></a>';
+};
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        // Uncomment the following option if you want items
+        // which are outside the visible range to be removed
+        // from the DOM.
+        // Useful for carousels with MANY items.
+
+        // itemVisibleOutCallback: {onAfterAnimation: function(carousel, item, i, state, evt) { carousel.remove(i); }},
+        itemLoadCallback: mycarousel_itemLoadCallback
+    });
+});
+
+</script>
+</head>
+<body>
+<div id="wrap">
+  <h1>jCarousel</h1>
+  <h2>Riding carousels with jQuery</h2>
+
+  <h3>Carousel with dynamic content loading via Ajax</h3>
+  <p>
+    The data is loaded dynamically from a simple text file which contains the image urls.
+  </p>
+
+  <div id="mycarousel" class="jcarousel-skin-ie7">
+    <ul>
+      <!-- The content will be dynamically loaded in here -->
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

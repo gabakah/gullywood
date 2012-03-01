@@ -1,0 +1,29 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:22:"/rest/p/html_quickform";}s:8:"_content";s:14:"HTML_QuickForm";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"3.2.7";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:3:"avb";s:1:"s";s:98:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.";s:1:"d";s:664:"NOTICE: development of HTML_QuickForm version 3 is frozen. Please submit
+feature requests for HTML_QuickForm2 package.
+
+The HTML_QuickForm package provides methods to dynamically create, validate
+and render HTML forms.
+
+Features:
+* More than 20 ready-to-use form elements.
+* XHTML compliant generated code.
+* Numerous mixable and extendable validation rules.
+* Automatic server-side validation and filtering.
+* On request javascript code generation for client-side validation.
+* File uploads support.
+* Total customization of form rendering.
+* Support for external template engines (ITX, Sigma, Flexy, Smarty).
+* Pluggable elements, rules and renderers extensions.";s:2:"da";s:19:"2006-10-10 12:00:08";s:1:"n";s:696:"Development of QuickForm version 3 is now frozen. Only bug fixing will be
+done. All feature requests should be submitted for HTML_QuickForm2 package.
+
+Bugfixes:
+* Radio button with value attribute of '0' was incorrectly set checked
+  after setDefaults() call (bug #8057)
+* Fixed errors in eval()'d code when element's name contains single quotes
+  and/or backslashes (bug #8123, bug #8414 has a more realistic example)
+* Fixed PHP warning on outputting hiddenselect element when its values
+  were never set (bug #8305)
+* Removed unnecessary if-else from HTML_QuickForm_file::moveUploadedFile()
+  (bug #8329)
+* Fixed Javascript error in hierselect element if option text was a number
+  (bug #8497)";s:1:"f";s:6:"102475";s:1:"g";s:44:"http://pear.php.net/get/HTML_QuickForm-3.2.7";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.3.2.7.xml";}}}

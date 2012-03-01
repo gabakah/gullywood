@@ -1,0 +1,9 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"/rest/p/mail_mime";}s:8:"_content";s:9:"Mail_Mime";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:8:"1.5.0RC1";s:2:"st";s:4:"beta";s:1:"l";s:9:"BSD Style";s:1:"m";s:5:"cipri";s:1:"s";s:59:"Mail_Mime provides classes create and decode mime messages.";s:1:"d";s:335:"Mail_Mime provides classes to deal with the creation and manipulation of mime messages.
+It allows people to create Email messages consisting of:
+* Text Parts
+* HTML Parts
+* Inline HTML Images
+* Attachments
+* Attached messages
+
+Starting with version 1.4.0, it also allows non US-ASCII chars in filenames, subjects, recipients, etc, etc.";s:2:"da";s:19:"2007-06-10 05:21:50";s:1:"n";s:25:"Split off mail_MimeDecode";s:1:"f";s:5:"22749";s:1:"g";s:42:"http://pear.php.net/get/Mail_Mime-1.5.0RC1";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:20:"package.1.5.0RC1.xml";}}}

@@ -1,0 +1,33 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:16:"/rest/p/validate";}s:8:"_content";s:8:"Validate";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"0.5.0";s:2:"st";s:5:"alpha";s:1:"l";s:3:"PHP";s:1:"m";s:5:"dufuz";s:1:"s";s:16:"Validation class";s:1:"d";s:297:"Package to validate various datas. It includes :
+ - numbers (min/max, decimal or not)
+ - email (syntax, domain check)
+ - string (predifined type alpha upper and/or lowercase, numeric,...)
+ - date (min, max)
+ - uri (RFC2396)
+ - possibility valid multiple data with a single method call (::multiple)";s:2:"da";s:19:"2005-05-20 16:35:35";s:1:"n";s:1081:"- Bug #2936, typo
+- Bug #2879, Issn wrong validation
+- Better email validation
+- Request #997 validate:date minium and maximum accept Date objects (By Torsten Roehr)
+- Request #4055 Making multiple() cope with new dir structure (By Torsten Roehr)
+  To use with Validate_Finance_CreditCard then do 'type' => 'Finance_CreditCard_number'
+  For Validate_US it would be 'type' => 'US_ssn'
+  This applies to all packages like that under Validate.
+- unit testing for multiple (By Torsten Roehr)
+- CS fixes
+- Split country and finance classes and credit card functions into their own sub packages of Validate
+- New lead/developer (Helgi)
+- Few more none alpha chars added
+- _check_control_number renamed to _checkControlNumber
+  _get_control_number renamed to _getControlNumber
+  _mult_weights renamed to _multWeights
+- added email test
+- Split these functions over to a new sub package called Validate_ISPN (International Standard Product Numbers)
+ * ISSN
+ * ISBN
+ * ISMN
+ * EAN8
+ * EAN13
+ * EAN14
+ * UCC12
+ * SSCC
+- splited multiple() test in with (skipif not installed) or without card,";s:1:"f";s:4:"9862";s:1:"g";s:38:"http://pear.php.net/get/Validate-0.5.0";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.0.5.0.xml";}}}

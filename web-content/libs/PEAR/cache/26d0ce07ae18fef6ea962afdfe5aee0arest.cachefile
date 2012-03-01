@@ -1,0 +1,9 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:12:"/rest/p/soap";}s:8:"_content";s:4:"SOAP";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:6:"0.11.0";s:2:"st";s:4:"beta";s:1:"l";s:11:"PHP License";s:1:"m";s:6:"yunosh";s:1:"s";s:26:"SOAP Client/Server for PHP";s:1:"d";s:44:"Implementation of SOAP protocol and services";s:2:"da";s:19:"2007-06-29 11:10:24";s:1:"n";s:850:"* Remove SOAP_RAW_CONVERT and SOAP_OBJECT_STRUCT settings.
+* Don't decode base64 encoded data automatically to be consistent with other encodings like hexBinary that aren't decoded either (Bug #9840).
+* Always close HTTP connections on requests to avoid keep-alive request (Maik Greubel, Bug #11123).
+* Fix serializing of arrays (Bugs #10283, #10635).
+* Fix MIME type quoting when using MIME attachments (Bug #10023).
+* Fix values of multiple arrays in result object being dismissed on SOAP to PHP-object conversion (Christian Weiske, Bug #2627).
+* Fix wrong Content-Type header on HTTPS requests (Christian Weiske, Bug #6213).
+* Fix empty arrays in SOAP responses being converted to empty string instead of empty array (Christian Weiske, Bug #10131).
+* Fix timezones in Type/dateTime.php not being converted correctly (Christian Weiske, Bug #10206).";s:1:"f";s:5:"69948";s:1:"g";s:35:"http://pear.php.net/get/SOAP-0.11.0";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:18:"package.0.11.0.xml";}}}

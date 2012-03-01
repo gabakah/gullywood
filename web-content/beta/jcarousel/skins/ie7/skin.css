@@ -1,0 +1,49 @@
+.jcarousel-skin-ie7.jcarousel-container { -moz-border-radius: 10px; background-color: #fff; background-repeat: repeat; background-attachment: scroll; background-position: 0 0; border: solid 1px #808080; }
+
+.jcarousel-skin-ie7.jcarousel-container-horizontal { top: 35px; bottom: 20px; width: 600px; height: 175px; padding: 20px; }
+.jcarousel-skin-ie7 .jcarousel-clip-horizontal { width:  600px; height: 160px; }
+.jcarousel-skin-ie7 .jcarousel-item { text-align: center; width: 140px; height: 160px; border: solid 1px #fff; }
+.jcarousel-skin-ie7 .jcarousel-item:hover {  }
+
+.jcarousel-skin-ie7 .jcarousel-item-horizontal {
+    margin-right: 10px;
+}
+.jcarousel-skin-ie7 .jcarousel-item-placeholder {
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-ie7 .jcarousel-next-horizontal { position: absolute; top: 4px; width: 32px; height: 32px; cursor: pointer; background: url(next-horizontal.gif) no-repeat; left: 572px; }
+
+.jcarousel-skin-ie7 .jcarousel-next-horizontal:hover {
+    background-position: -32px 0;
+}
+
+.jcarousel-skin-ie7 .jcarousel-next-horizontal:active {
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-ie7 .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-ie7 .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-ie7 .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+.jcarousel-skin-ie7 .jcarousel-prev-horizontal { position: absolute; top: 4px; width: 32px; height: 32px; cursor: pointer; background: url(prev-horizontal.gif) no-repeat; left: 539px; }
+
+.jcarousel-skin-ie7 .jcarousel-prev-horizontal:hover {
+    background-position: -32px 0;
+}
+
+.jcarousel-skin-ie7 .jcarousel-prev-horizontal:active {
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-ie7 .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-ie7 .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-ie7 .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}

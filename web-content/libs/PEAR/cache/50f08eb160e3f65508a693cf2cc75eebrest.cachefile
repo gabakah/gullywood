@@ -1,0 +1,45 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:22:"/rest/p/html_quickform";}s:8:"_content";s:14:"HTML_QuickForm";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"3.2.4";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:3:"avb";s:1:"s";s:98:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.";s:1:"d";s:545:"The HTML_QuickForm package provides methods for dynamically create, validate and render HTML forms.
+
+Features:
+* More than 20 ready-to-use form elements.
+* XHTML compliant generated code.
+* Numerous mixable and extendable validation rules.
+* Automatic server-side validation and filtering.
+* On request javascript code generation for client-side validation.
+* File uploads support.
+* Total customization of form rendering.
+* Support for external template engines (ITX, Sigma, Flexy, Smarty).
+* Pluggable elements, rules and renderers extensions.";s:2:"da";s:19:"2004-10-18 11:07:00";s:1:"n";s:1613:"* Additions and changes
+- Implemented HTML_QuickForm::insertElementBefore() method which 
+  allows adding elements into arbitrary places and reordering the 
+  existing form elements (thanks to Justin Patrin for initial
+  implementation and helpful comments, see request #1587)
+- Implemented HTML_QuickForm_element::unfreeze() method
+- HTML_QuickForm::removeElement() now returns reference to element
+  being removed
+- Array renderer outputs header name into the resultant array
+  (request #2276)
+- Added $staticLabels option to Array renderer's constructor, this
+  makes the renderer "flatten" the array of labels
+- Added Ukrainian translation for 'date' element (Andrey Kornilov)
+- Removed newline after <script> tags in 'autocomplete' and
+  'hierselect' elements (request #2373)
+
+* Bugfixes
+- HTML_QuickForm::getSubmitValue() now properly returns null for
+  groups if form was not yet submitted (bug #2517)
+- stripslashes() is used only on 'name' element of file upload
+  data (bug #1843)
+- HTML_QuickForm::addGroupRule() now works better with <select 
+  multiple> elements (bug #1810)
+- Fixed notice if empty string was passed to date::setValue() 
+  (bug #2530)
+- Calling HTML_QuickForm_group::getFrozenHtml() no longer freezes 
+  the group (bug #1836)
+- Groups now correctly handle setPersistantFreeze() call (bug #1836)
+- ITDynamic renderer does not replace empty separator with &nbsp;
+  anymore (bug #2354)
+- 'maxfilesize' rule returns false in case of file upload errors
+  (bug #2203)
+- Fixed Javascript generation for 'hierselect' elements (bug #1984)
+- Fixed examples using 'rangelength' rule (bug #2421)";s:1:"f";s:5:"92946";s:1:"g";s:44:"http://pear.php.net/get/HTML_QuickForm-3.2.4";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.3.2.4.xml";}}}

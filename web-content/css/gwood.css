@@ -1,0 +1,55 @@
+body { background-color: #fa9222; }
+.centered80 { position: relative; right: 0; left: 0; width: 50%; margin : auto; }
+#footer ul { color: #f1f1f1; font: 11px Verdana, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+#footer ul li { display: inline; }
+#footer ul li a { color: #f1f1f1; background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0 0; margin-left: 20px; text-decoration: none; }
+#footer ul li a:link { color: #f1f1f1; text-decoration: underline; }
+#footer ul li a:visited { color: #f1f1f1;}
+#footer ul li a:link:hover { color: #fff; background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0 0; }
+#footer ul li a#current { background: white; }
+.copyright { color: #fff; font-size: 9px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; font-style: normal; line-height: normal; margin-left: 95px; }
+#userinfo a { color: #f0f0f0; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; }
+#userinfo a:link { color: #f0f0f0; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; }
+#userinfo a:visited { color: #f0f0f0; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; }
+#userinfo a:hover { color: white; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline; }
+
+#helpTableDiv ul { color: #5d5c5c; font: 9pt Verdana, Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+#helpTableDiv ul li { list-style-type: circle; cursor: pointer; display: list-item; }
+
+.usrinfoSlashes { color: #fafafa; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: normal; }
+
+.loginNonMember { color: #0c55ae; font-size: 12px; font-family: SunSans-Regular, Verdana, Helvetica, Geneva, Arial, sans-serif; line-height: normal; margin-left: 60px; }
+.mMenuStyle a { color: #0073ba; font-size: 19px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; font-weight: bold; font-style: normal; text-decoration: none; }
+.mMenuStyle a:link { color: #0073ba; font-size: 19px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; font-weight: bold; font-style: normal; text-decoration: none; }
+.mMenuStyle a:visited { color: #0073ba; font-size: 19px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; font-weight: bold; font-style: normal; text-decoration: none; }
+.mMenuStyle a:hover { color: #019dfe; font-size: 19px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; font-weight: bold; font-style: normal; text-decoration: underline; }
+
+.mMenuSource { color: #781313; font-size: 32px; font-family: "Arial Black", Arial, "Trebuchet MS", Geneva, SunSans-Regular, sans-serif, Helvetica; font-weight: normal; line-height: 30px; }
+#motto ul { list-style-type: disc; }
+#moto ul li {  }
+#motto ul li a { color: #781313; font-size: 14px; font-family: "Arial Black", Arial, Verdana, Helvetica, sans-serif; }
+#plate { background-color: #f5edda; background-image: none; border: solid 1px #9b5b02; }
+#plate img { border: solid 1px white; }
+.hiwAwords { color: #d81c1d; font-size: 22px; font-family: "Arial Black", Helvetica, SunSans-Regular, "Arial Bold", Arial, Geneva, sans-serif; font-weight: bold; }
+.hiwAwordsSmall { color: #5d5c5c; font-size: 13px; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; font-weight: 500; text-align: justify; }
+.hiwAwordsCaption { color: #335cd8; font-size: 35px; font-family: "Arial Black", Arial, Helvetica, "Arno Pro Smbd Display", Geneva, SunSans-Regular, sans-serif; }
+.hiwCaption { color: #444343; font-size: 12pt; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+.hiwDetails { color: #5d5c5c; font-size: 10pt; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+.plnAwordsCaption { color: #335cd8; font-size: 35px; font-family: "Arial Black", Arial, Helvetica, "Arno Pro Smbd Display", Geneva, SunSans-Regular, sans-serif; }
+.hlpAwordsCaption { color: #335cd8; font-size: 35px; font-family: "Arial Black", Arial, Helvetica, "Arno Pro Smbd Display", Geneva, SunSans-Regular, sans-serif; }
+.plnCaption { color: #444343; font-size: 12pt; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+.plnDetails { color: #5d5c5c; font-size: 11pt; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+.plnRental { color: #5d5c5c; font-size: 8pt; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+.plnMessage { color: #249505; font-size: 10pt; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+.hlpTableLft { border-color: #2154e0; }
+.hlpTableRgt { border: solid 1pt #2154e0; outline: solid 1pt #2154e0; }
+.hlpTableMid { border: solid 1pt #2154e0; outline: solid 1pt #2154e0; }
+.hlpTable { border-color: #2154e0; border-width: 1px; }
+.hlpDetails { color: #5d5c5c; font-size: 10pt; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+.newReleaases a { color: #1380c3; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; }
+.newReleaases a:link { color: #1380c3; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; font-style: inherit; }
+.newReleaases a:hover { color: #e57906; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; font-style: inherit; }
+.NewReleasesCaption { font-size: 16pt; font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; font-weight: bold; }
+#logo{ width: 770px; margin: auto auto; text-align: left; }
+#motto{ width: 710px; margin: 0 auto; text-align: left; }
+#squareButton{ width: 742px; margin: 0 auto; text-align: left; }

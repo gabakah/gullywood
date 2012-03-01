@@ -1,0 +1,38 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:22:"/rest/p/html_quickform";}s:8:"_content";s:14:"HTML_QuickForm";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:8:"3.0Beta2";s:2:"st";s:4:"beta";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"mansion";s:1:"s";s:98:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.";s:1:"d";s:691:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.
+Features:
+* Creates xHTML compliant form elements of various type.
+* Allows you to choose an unlimited number of html attributes.
+* Allows you to create your own custom elements using your own classes.
+* Process form values (you should override the process method).
+* Creates javascript validation code using regular expression.
+* Server-side validation too.
+* Allows you to create your own validation rules.
+* Manages file uploads.
+* Allows you to freeze some elements in your form.
+* Allows you to customize the look of your form in many ways.
+* Template-like form elements customization...";s:2:"da";s:19:"2003-05-14 20:38:00";s:1:"n";s:1259:"- PHP 4.2+ is now required for file uploads
+
+* Bugfixes
+
+- Fixed bug with selected values in select element
+- Fixed bug when form method was changed from get to post by adding a file element
+- addRule() and addGroupRule() now return a PEAR error when the rule is not registered
+- <label> tags are no more generated for frozen checkboxes and radios
+
+* Changes
+
+- Added new Array-based renderer for Smarty, with examples (Thomas Schulz)
+- Array renderer generates more info on the form, possibility to set styles for elements (Thomas Schulz)
+- Example of usage for Array renderer with Smarty (Thomas Schulz)
+- Better XHTML compliance for Default renderer output (Klaus Guenther, Alexey Borzov)
+- Added possibility to have multiple labels for one element (Jon Wood)
+- Added support for multiple labels in ITStatic and ITDynamic renderers (Jon Wood, Alexey, Bertrand)
+
+- Added client-side validation parameter to addGroupRule() (Bertrand Mansion)
+
+- getSubmitValues() can now return uploaded files (Markus Wolff, Alexey Borzov)
+- Added new methods set/getMaxFileSize (Tommy Ipsen)
+
+- Removed unwanted linefeeds in frozen checkboxes (Thomas Schulz)
+- Added Spanish translation for date element (The PhP_KiD)
+- Added a setValue() method to static element (Jon Wood)";s:1:"f";s:5:"60670";s:1:"g";s:47:"http://pear.php.net/get/HTML_QuickForm-3.0Beta2";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:20:"package.3.0Beta2.xml";}}}

@@ -1,0 +1,1 @@
+s:220:"a:1:{s:8:"required";a:3:{s:3:"php";a:1:{s:3:"min";s:3:"4.2";}s:13:"pearinstaller";a:1:{s:3:"min";s:7:"1.4.0b1";}s:7:"package";a:3:{s:4:"name";s:11:"HTML_Common";s:7:"channel";s:12:"pear.php.net";s:3:"min";s:5:"1.2.1";}}}";

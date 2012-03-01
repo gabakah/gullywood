@@ -1,0 +1,65 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:10:"/rest/p/db";}s:8:"_content";s:2:"DB";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:8:"1.6.0RC3";s:2:"st";s:4:"beta";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"danielc";s:1:"s";s:26:"Database Abstraction Layer";s:1:"d";s:930:"DB is a database abstraction layer providing:
+* an OO-style query API
+* a DSN (data source name) format for specifying
+   database servers
+* prepare/execute (bind) emulation for databases
+   that don't support it natively
+* a result object for each query response
+* portable error codes
+* sequence emulation
+* sequential and non-sequential row fetching as well
+   as bulk fetching
+* ordered array, associative array and object formats
+   supported for the fetched rows
+* row limit support
+* transactions support
+* table information interface
+* DocBook and PHPDoc API documentation
+* Compatible with PHP 4 and PHP 5
+
+DB layers itself on top of PHP's existing database
+extensions.  The currently supported extensions are:
+dbase, fbsql, interbase, informix, msql, mssql, mysql,
+mysqli, oci8, odbc, pgsql, sqlite and sybase (DB style
+interfaces to LDAP servers and MS ADO (using COM) are
+also avaible from a separate package).";s:2:"da";s:19:"2004-01-30 21:34:12";s:1:"n";s:1014:"=============
+GENERAL:
+
+Loads of small code optimizations implemented, many of
+which were found using Zend Studio's Code Analyzer.
+
+Since most DBMS's need 1/0 for boolean support, use
+1/0 in common.php and only put quoteSimple() methods
+in the few drivers that use true booleans or other
+formats (dbase, fbase, pgsql).
+
+Enhanced 15quote.phpt so it tests boolean features
+in quoteSmart() and handles more DBMS types.
+
+Added new 18get.phpt test.
+
+
+=============
+BUGS FIXED:
+
+- odbc:
+Fix connect() so uses 'database' from DSN instead of
+having to use 'hostspec' as a workaround.  Correct
+DSN syntax is: odbc(db2)://user:password@/database
+
+- pgsql:
+Refine DB_ERROR_NOSUCHTABLE error_regexp.
+
+- sqlite:
+Make freeResult() do what it says it does.
+
+- ibase, msql, odbc:
+quoteSmart() now uses 1/0 for booleans.
+
+- ibase, msql, odbc:
+getSpecialQuery() doesn't return anything in these
+drivers. Put one in common.php that raises
+DB_ERROR_UNSUPPORTED.
+
+- mysql, mysql4:
+Removed unused argument "$subject" from modifyQuery().";s:1:"f";s:5:"87652";s:1:"g";s:35:"http://pear.php.net/get/DB-1.6.0RC3";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:20:"package.1.6.0RC3.xml";}}}

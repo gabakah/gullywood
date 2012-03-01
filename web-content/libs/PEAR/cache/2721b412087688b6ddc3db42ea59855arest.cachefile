@@ -1,0 +1,26 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:22:"/rest/p/html_quickform";}s:8:"_content";s:14:"HTML_QuickForm";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"3.1.1";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:3:"avb";s:1:"s";s:98:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.";s:1:"d";s:691:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.
+Features:
+* Creates xHTML compliant form elements of various type.
+* Allows you to choose an unlimited number of html attributes.
+* Allows you to create your own custom elements using your own classes.
+* Process form values (you should override the process method).
+* Creates javascript validation code using regular expression.
+* Server-side validation too.
+* Allows you to create your own validation rules.
+* Manages file uploads.
+* Allows you to freeze some elements in your form.
+* Allows you to customize the look of your form in many ways.
+* Template-like form elements customization...";s:2:"da";s:19:"2003-09-09 15:26:00";s:1:"n";s:725:"* New additions
+- Added Flexy renderer with examples (Ron McClain)
+- Added QuickHtml renderer with example (Jason Rust)
+- Added possibility to add customized empty options on top of date element selects (Jason Rust)
+- Added Czech translation for date element (Tomas Zavodny)
+
+* Bugfixes
+- Fixed a bug in select element found by Pascal Thuet (Bertrand Mansion)
+- Fixed setting hierselect's values, reported by Keith Edmunds (Bertrand Mansion)
+- Fixed validate() not checking for presence of _formRules, reported by Justin Hendrickson (Alexey Borzov)
+- Fixed javascript for advcheckbox element (Jason Rust)
+
+Deprecated methods will be kept for 3.1.x releases, but will be removed in the next
+major one. Please update your code!";s:1:"f";s:5:"78187";s:1:"g";s:44:"http://pear.php.net/get/HTML_QuickForm-3.1.1";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.3.1.1.xml";}}}

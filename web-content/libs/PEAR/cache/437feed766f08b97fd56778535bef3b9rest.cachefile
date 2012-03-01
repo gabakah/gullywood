@@ -1,0 +1,17 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:22:"/rest/p/html_quickform";}s:8:"_content";s:14:"HTML_QuickForm";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:3:"3.0";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"mansion";s:1:"s";s:98:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.";s:1:"d";s:691:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.
+Features:
+* Creates xHTML compliant form elements of various type.
+* Allows you to choose an unlimited number of html attributes.
+* Allows you to create your own custom elements using your own classes.
+* Process form values (you should override the process method).
+* Creates javascript validation code using regular expression.
+* Server-side validation too.
+* Allows you to create your own validation rules.
+* Manages file uploads.
+* Allows you to freeze some elements in your form.
+* Allows you to customize the look of your form in many ways.
+* Template-like form elements customization...";s:2:"da";s:19:"2003-06-04 15:05:00";s:1:"n";s:226:"* Fixes
+
+- do not use submit values for 'submit' elements also (reported by Thomas Schulz, Mike Carter)
+- assorted small fixes to HTML_QuickForm's methods and PHPDoc documentation
+- HTML_QuickForm::apiVersion() returns 3.0 now";s:1:"f";s:5:"62379";s:1:"g";s:42:"http://pear.php.net/get/HTML_QuickForm-3.0";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:15:"package.3.0.xml";}}}

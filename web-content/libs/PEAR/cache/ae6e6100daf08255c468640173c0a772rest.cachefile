@@ -1,0 +1,21 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:16:"/rest/p/validate";}s:8:"_content";s:8:"Validate";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"0.6.3";s:2:"st";s:4:"beta";s:1:"l";s:7:"New BSD";s:1:"m";s:6:"pajoye";s:1:"s";s:16:"Validation class";s:1:"d";s:305:"Package to validate various datas. It includes :
+ - numbers (min/max, decimal or not)
+ - email (syntax, domain check, rfc822)
+ - string (predifined type alpha upper and/or lowercase, numeric,...)
+ - date (min, max)
+ - uri (RFC2396)
+ - possibility valid multiple data with a single method call (::multiple)";s:2:"da";s:19:"2006-04-20 17:46:18";s:1:"n";s:835:"- email():
+ * #6930, accepts options as an array to confirm to the Validate standard
+   previous boolean $check_domain still accepted for backwards compatibility
+ * #7176, introduces an experimental option "use_rfc822"
+   which switch to a full RFC822 new checker
+ * unit test enhanced and completed
+- class_exists call in mulitple() now passes false to the autoload param
+- uri():
+ * #6181, Accept URI terminating with a /
+ * use !empty() instead of isset()
+ * minus in the top domain as http://example.co-m is invalid
+ * Double slashes are accepted in the path part (requested by bjori)
+   As a consequence, only URIs with full authority can be valid, no relative URI
+ * documentation header completed : usage notes , options and "strict" parameter
+ * unit tests completed and updated , use php.net instead of unavailable example.org";s:1:"f";s:5:"14543";s:1:"g";s:38:"http://pear.php.net/get/Validate-0.6.3";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.0.6.3.xml";}}}

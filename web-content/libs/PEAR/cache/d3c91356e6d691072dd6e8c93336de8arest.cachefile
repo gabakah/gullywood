@@ -1,0 +1,96 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:10:"/rest/p/db";}s:8:"_content";s:2:"DB";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"1.6.0";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"danielc";s:1:"s";s:26:"Database Abstraction Layer";s:1:"d";s:917:"DB is a database abstraction layer providing:
+* an OO-style query API
+* portability features that make programs written
+   for one DBMS work with other DBMS's
+* a DSN (data source name) format for specifying
+   database servers
+* prepare/execute (bind) emulation for databases
+   that don't support it natively
+* a result object for each query response
+* portable error codes
+* sequence emulation
+* sequential and non-sequential row fetching as
+   well as bulk fetching
+* formats fetched rows as associative arrays,
+   ordered arrays or objects
+* row limit support
+* transactions support
+* table information interface
+* DocBook and PHPDoc API documentation
+
+DB layers itself on top of PHP's existing
+database extensions.  The currently supported
+extensions are:
+dbase, fbsql, interbase, informix,
+msql, mssql, mysql, mysqli,
+oci8, odbc, pgsql, sqlite and sybase.
+
+DB is compatible with both PHP 4 and PHP 5.";s:2:"da";s:19:"2004-02-19 17:03:37";s:1:"n";s:1773:"=============
+API CHANGE:
+
+mysql4 was renamed mysqli.  Change your DSN info
+accordingly.  (danielc)
+
+
+=============
+ENHANCEMENTS:
+
+- test suite:
+The test suite now includes a shell script for
+jump starting the process.  Also, the version
+of setup.inc stored in CVS was renamed so you
+don't have to worry about CVS touching or
+committing your locally modified copy.  (danielc)
+
+- all:
+Added DB_PORTABILITY_NULL_TO_EMPTY portability
+mode.  Converts null values to empty strings in
+data output by * get*() and fetch*().  Helpful
+because Oracle doesn't know the difference
+between null and empty.  (danielc)
+
+- ifx:
+Several new error code mappings:
+'Identifier too long' = DB_ERROR_SYNTAX
+'Table already exists' = DB_ERROR_ALREADY_EXISTS
+'duplicate value' = DB_ERROR_CONSTRAINT
+'Could not update a row in the table'
+   = DB_ERROR_CONSTRAINT
+'Missing key in referenced table for referential
+   constraint' = DB_ERROR_CONSTRAINT
+'Character to numeric conversion error'
+   = DB_ERROR_INVALID_NUMBER
+'Syntax disallowed in this database server'
+   = DB_ERROR_SYNTAX
+(danielc)
+
+-ibase, ifx, mssql, oci8, odbc, pgsql,
+sqlite, sybase:
+Map not null constraint errors to
+DB_ERROR_CONSTRAINT_NOT_NULL.  (danielc) 
+
+-mysql, mysqli:
+Map not null constraint error (1048) from
+DB_ERROR_CONSTRAINT to
+DB_ERROR_CONSTRAINT_NOT_NULL when
+portability is on. (danielc)
+
+
+=============
+BUGS FIXED:
+
+- ifx:
+fetchRow() now adds 1 to the requested $rownum
+because ifx_fetch_row() starts at 1.  (peterwb)
+
+- ifx:
+affectedRows() now returns 0 for SELECT
+queries, just like the other DBMS's.  (danielc)
+
+- ibase:
+Remove trans_number argument from rollback()
+method.  No other driver has it and
+ibase_rollback() doesn't accept it.  (danielc)
+
+- sqlite:
+Set $dsn property when connecting.  (danielc)";s:1:"f";s:5:"89660";s:1:"g";s:32:"http://pear.php.net/get/DB-1.6.0";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.1.6.0.xml";}}}

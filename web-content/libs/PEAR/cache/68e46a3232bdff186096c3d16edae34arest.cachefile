@@ -1,0 +1,11 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:23:"/rest/p/html_javascript";}s:8:"_content";s:15:"HTML_Javascript";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"1.0.0";s:2:"st";s:6:"stable";s:1:"l";s:8:"PHP 2.02";s:1:"m";s:3:"tal";s:1:"s";s:53:"Provides an interface for creating simple JS scripts.";s:1:"d";s:122:"Provides two classes:
+HTML_Javascript for performing basic JS operations.
+HTML_Javascript_Convert for converting variables";s:2:"da";s:19:"2002-07-30 20:59:00";s:1:"n";s:432:"New features and bug fixes:
+* Fixed convertVar input tests (pajoye)
+* Added multi-dimensional arrays support (pajoye)
+* Added associative arrays support (pajoye)
+* Added default error to match the mixed return value (pajoye)
+* Fixed write and writeln methods, escaped string (pajoye)
+* Removed checks if the startScript() method has been called
+  it allows the foo::foobar() syntax
+* Added Pierre (pajoye) as a lead maintainer (Tal)";s:1:"f";s:4:"4141";s:1:"g";s:45:"http://pear.php.net/get/HTML_Javascript-1.0.0";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.1.0.0.xml";}}}

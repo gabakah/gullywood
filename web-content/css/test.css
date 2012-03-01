@@ -1,0 +1,18 @@
+#wrapper-middle{width: 981px; padding-top: 14px;}
+#RealMedia_ADx01{float: left; padding-right: 9px;}
+#RealMedia_ADx02{float: left;}
+#RealMedia_ADx03{float: left; padding-left: 19px; padding-top: 11px;}
+#b-sect{float: left; padding-top: 11px;}
+#newon-wrapper{width:649px;border-left:solid 1px #e4e4e4;padding:0px; height:209px;}
+#newon-wrapper a {font-family:arial;font-size:12px;font-weight:700;color:#666666;text-decoration:none;}
+#newon-wrapper a:hover {text-decoration:underline;color:#005bc0;}
+.newon-element img:hover {text-decoration:none;}
+.newon-element img {padding-bottom:10px;text-decoration:none;}
+.newon-buytag{width:119px;height:19px;background-color:#f5f8fa;}
+.newon-element-top{height:180px;}
+.newon-element{float:right;padding-top:10px;text-align:center;width:128px;border-right:solid 1px #e4e4e4;height:199px;}
+.newon-buytag a {padding-top:2px;color:#666666;}
+.newon-buytag a:hover {color:#333333;}
+.clear{clear: both;}
+.img { background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0 0; position: relative; }
+.title { color: gray; font-size: 10px; font-family: SunSans-Regular, Verdana, Helvetica, Geneva, Arial, sans-serif; font-weight: bold; text-decoration: none; text-align: center; position: relative; }

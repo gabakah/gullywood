@@ -1,0 +1,40 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:22:"/rest/p/html_quickform";}s:8:"_content";s:14:"HTML_QuickForm";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"3.2.3";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"mansion";s:1:"s";s:98:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.";s:1:"d";s:545:"The HTML_QuickForm package provides methods for dynamically create, validate and render HTML forms.
+
+Features:
+* More than 20 ready-to-use form elements.
+* XHTML compliant generated code.
+* Numerous mixable and extendable validation rules.
+* Automatic server-side validation and filtering.
+* On request javascript code generation for client-side validation.
+* File uploads support.
+* Total customization of form rendering.
+* Support for external template engines (ITX, Sigma, Flexy, Smarty).
+* Pluggable elements, rules and renderers extensions.";s:2:"da";s:19:"2004-06-28 11:24:14";s:1:"n";s:1504:"* Additions and changes
+- Implemented a new 'xbutton' element for HTML 4.0 <button> tag
+  (see also #1227)
+- HTML_QuickForm::toArray() method accepts a boolean value that is 
+  passed to the constructor of HTML_QuickForm_Renderer_Array (see #1392)
+- ITDynamic renderer is now able to select a block for rendering based
+  on the element's name (see #1506)
+- Default template of Default Renderer now allows XHTML-compliant output
+  of hidden elements (see #1124)
+- Added Esperanto translation and French accents for date element 
+  (Sebastien Montagne)
+- Implemented #553: ITStatic renderer can use special blocks for required
+  elements and errors, if present in the template
+- Implemented #1576: Enclose js code between //<![CDATA[ and //]]>
+  to make it xhtml compliant
+
+* Bugfixes
+- Fixed #1235 (setChecked() and setValue() did not work on advcheckbox)
+- Fixed #1389 (Invalid comments in autocomplete element's Javascript)
+- Fixed #1143 (Client validation should be turned off for frozen elements)
+- Fixed #1252 (File upload names were not cleaned when magic_quotes_gpc = On)
+- Fixed notices raised by hierselect element (reported by Herim Vasquez)
+- Fixed #1248 (Errors in hierselect's Javascript when element's name
+  begins with a number)
+- Fixed #1577 (hierselect's Javascript works with multiselects)
+- Fixed #1516 (Default Renderer should use separators even when 
+  setGroupTemplate() is used)
+- Fixed #1694 (ITStatic renders hidden element with brackets correctly,
+  patch provided by milamamu)";s:1:"f";s:5:"90694";s:1:"g";s:44:"http://pear.php.net/get/HTML_QuickForm-3.2.3";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.3.2.3.xml";}}}

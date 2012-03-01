@@ -1,0 +1,26 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:12:"/rest/p/auth";}s:8:"_content";s:4:"Auth";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"1.5.3";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"aashley";s:1:"s";s:34:"Creating an authentication system.";s:1:"d";s:561:"The PEAR::Auth package provides methods for creating an authentication
+system using PHP.
+
+Currently it supports the following storage containers to read/write
+the login data:
+
+* All databases supported by the PEAR database layer
+* All databases supported by the MDB database layer
+* All databases supported by the MDB2 database layer
+* Plaintext files
+* LDAP servers
+* POP3 servers
+* IMAP servers
+* vpopmail accounts
+* RADIUS
+* SAMBA password files
+* SOAP (Using either PEAR SOAP package or PHP5 SOAP extension)
+* PEAR website
+* Kerberos V servers
+* SAP servers";s:2:"da";s:19:"2007-07-02 01:27:59";s:1:"n";s:422:"* Fixed Bug: If Auth::setSessionName() is called new session name variable is
+  not initialised so checks for session storage fail.
+* Fixed Bug #11396: Auth_Container_Pear doesn't work with latest changes to
+  pear.php.net. Fix by Adam Harvey.
+* Fixed Bug #11476: SOAP5 container's _validateOptions() and _setDefaults()
+  functions where setting options into the wrong object parameter. Thanks to
+  Köles Mihály for fix.";s:1:"f";s:5:"54428";s:1:"g";s:34:"http://pear.php.net/get/Auth-1.5.3";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.1.5.3.xml";}}}

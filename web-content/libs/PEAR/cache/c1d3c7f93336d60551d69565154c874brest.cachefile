@@ -1,0 +1,26 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:10:"/rest/p/db";}s:8:"_content";s:2:"DB";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:8:"1.5.0RC2";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:3:"cox";s:1:"s";s:26:"Database Abstraction Layer";s:1:"d";s:872:"DB is a database abstraction layer providing:
+* an OO-style query API
+* a DSN (data source name) format for specifying database servers
+* prepare/execute (bind) emulation for databases that don't support
+  it natively
+* a result object for each query response
+* portable error codes
+* sequence emulation
+* sequential and non sequential row fetching as well as bulk fetching
+* ordered array, associative array and object formats supported for
+  the fetched rows
+* row limit support
+* transactions support
+* table information interface
+* DocBook and PHPDoc API documentation
+
+DB layers itself on top of PHP's existing database extensions.  The
+currently supported extensions are: dbase, fbsql, interbase, informix,
+msql, mssql, mysql, oci8, odbc, pgsql, sqlite and sybase (DB style interfaces
+to LDAP servers and MS ADO (using COM) are also avaible from a separate package).";s:2:"da";s:19:"2003-09-14 19:48:00";s:1:"n";s:253:"New Features:
+- Added "isnullable" and "primary_key" field flags for tableInfo() (only avaible when passed a table name)
+- Added transactions support for the Informix driver
+
+Bugs fixed:
+- SQLite driver now passes all the tests
+- Various others bugfixes";s:1:"f";s:5:"68128";s:1:"g";s:35:"http://pear.php.net/get/DB-1.5.0RC2";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:20:"package.1.5.0RC2.xml";}}}

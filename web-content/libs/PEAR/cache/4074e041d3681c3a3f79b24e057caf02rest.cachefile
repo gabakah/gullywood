@@ -1,0 +1,7 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:16:"/rest/p/validate";}s:8:"_content";s:8:"Validate";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"0.0.3";s:2:"st";s:5:"alpha";s:1:"l";s:3:"PHP";s:1:"m";s:6:"pajoye";s:1:"s";s:16:"Validation class";s:1:"d";s:290:"Package to validate various datas. It includes :
+* numbers (min/max, decimal or not)
+* email (syntax, domain check)
+* string (predifined type alpha upper and/or lowercase, numeric,...)
+* date (min, max)
+* Credit cards
+* possibility valid multiple data with a single method call (::multiple)";s:2:"da";s:19:"2002-08-18 19:31:00";s:1:"n";s:23:"Initial package release";s:1:"f";s:4:"8042";s:1:"g";s:38:"http://pear.php.net/get/Validate-0.0.3";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.0.0.3.xml";}}}

@@ -1,0 +1,44 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:22:"/rest/p/html_quickform";}s:8:"_content";s:14:"HTML_QuickForm";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:3:"3.1";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"mansion";s:1:"s";s:98:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.";s:1:"d";s:691:"The PEAR::HTML_QuickForm package provides methods for creating, validating, processing HTML forms.
+Features:
+* Creates xHTML compliant form elements of various type.
+* Allows you to choose an unlimited number of html attributes.
+* Allows you to create your own custom elements using your own classes.
+* Process form values (you should override the process method).
+* Creates javascript validation code using regular expression.
+* Server-side validation too.
+* Allows you to create your own validation rules.
+* Manages file uploads.
+* Allows you to freeze some elements in your form.
+* Allows you to customize the look of your form in many ways.
+* Template-like form elements customization...";s:2:"da";s:19:"2003-07-19 11:44:00";s:1:"n";s:2194:"* New additions
+- Added a new hierselect element, a group of two selects where the first select changes the options of the second select using javascript (Bertrand Mansion)
+- Added exportValue() and exportValues() methods, these should now be the preferred way to get form values (Alexey Borzov)
+- Added addFormRule() method, this adds the rule that validates the whole form (Alexey Borzov)
+- Added Italian date/dategroup names (Marco Piarulli)
+- Added Slovak date/dategroup names (Peter Sablica)
+- Added Icelandic date/dategroup names (Birgir Stefansson)
+
+* Changes
+- Rule-registering functions can now be called statically (Alexey Borzov)
+- File-related rules and methods are moved to HTML_QuickForm_file (Alexey Borzov)
+- Moved 'magic quotes' handling to QuickForm's constructor (Alexey Borzov)
+- Use strtr() instead of rawurlencode() for javascript messages (Bertrand Mansion)
+- Changed the nonzero rule to every numbers (negative or positive) except zero (David Sklar)
+- Date element has been entirely reworked and optimised (Alexey Borzov)
+- Updated the examples to use the latest changes (Alexey Borzov, Bertrand Mansion)
+
+* Bugfixes
+- Fixed a bug in HTML_QuickForm_group::getFrozenHtml() (Alexey Borzov, Wolfram Kriesing)
+- Fixed a problem in HTML_QuickForm_group::getValue(): value was not changed to array (Alexey Borzov)
+- Correctly set element's index in addElement() if some of the elements were previously removed (Alexey Borzov, Wolfram Kriesing)
+- Fixed notice in _findElementValue() for files (Bertrand Mansion)
+- Fixed passing a 'selected' attribute to addOption() (Alexey Borzov, Wolfram Kriesing)
+
+* Deprecated
+- setFormat(), setMinYear() and other accessors in date element are now deprecated. Set options and attributes in the constructor instead (Alexey Borzov)
+- Method getAttributesString() is deprecated (Alexey Borzov)
+- HTML_QuickForm's isUploadedFile(), moveUploadedFile(), getUploadeFile() are now deprecated (Alexey Borzov)
+
+Deprecated methods will be removed from QuickForm in the next release.
+In this release, they throw PEAR errors but still finish the job.
+Use this to catch them with an error handler function, the global error code is QUICKFORM_DEPRECATED.";s:1:"f";s:5:"67943";s:1:"g";s:42:"http://pear.php.net/get/HTML_QuickForm-3.1";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:15:"package.3.1.xml";}}}

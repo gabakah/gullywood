@@ -1,0 +1,96 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"/rest/p/html_form";}s:8:"_content";s:9:"HTML_Form";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:8:"1.1.0RC1";s:2:"st";s:4:"beta";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"danielc";s:1:"s";s:24:"Simple HTML form package";s:1:"d";s:273:"This is a simple HTML form generator.  It supports all the
+HTML form element types including file uploads, may return
+or print the form, just individual form elements or the full
+form in "table mode" with a fixed layout.
+
+This package has been superceded by HTML_QuickForm.";s:2:"da";s:19:"2004-06-14 00:07:56";s:1:"n";s:2614:"* Don't pass $this->action through basename() in
+returnStart() or start().  Bug #658.
+
+* Make notes in the docblock comments regarding
+methods with unusual parameter orders.  Bug #659.
+
+* addImage() now works.  Accomplished by adding
+displayImage(), displayImageRow(), returnImageRow()
+and returnImage() methods.  Bug #1126.
+
+* Have returnStart() put $this->target into the
+<form> element's attributes.  PHP Bug #24017.  (nicos)
+
+* Remove reference on $default in
+displayTextareaRow().  PHP Bug #22062.  (mj)
+
+* Add docblock comments.
+
+* Add new methods: returnRadio(), returnRadioRow()
+and returnFileRow().
+
+* $maxlength parameter added to returnText(),
+returnTextRow(), returnPassword(), returnPasswordRow(),
+returnTextarea() and returnTextareaRow() for
+consistency with display*() methods' parameters.
+
+* Add $maxlength to addPassword(), displayPassword(),
+and displayPasswordRow().
+
+* $accept parameter added to returnMultipleFiles()
+and returnFile() for consistency with addFile().
+
+* Add $attr parameter to most methods.
+
+* valign="top" added to <td> in returnPlaintextRow()
+for consistency with displayPlaintextRow().
+
+* displayFile() and displayMultipleFiles() now
+produce a separate hidden input for MAX_FILE_SIZE.
+
+* returnCheckbox() now does a type sensitive
+comparison on $default to determine if checked.
+
+* ":" now appears in each $title.
+
+* Add the $thattr and $tdattr parameters.
+
+* Use <th> instead of <td> for empty cell in returnSubmitRow()
+and returnResetRow(), matching layout of other methods.
+
+* Ease maintenance by having all display*() methods
+just print the results of the return*() methods.
+
+* $default parameter to addCheckbox() now defaults
+to FALSE.
+
+* $default parameter to addTextarea() and
+addPassword() now defaults an empty string.
+
+* Define the constants used by addTextarea():
+HTML_FORM_TEXTAREA_WT and HTML_FORM_TEXTAREA_HT.
+
+* Add "$multipartformdata = false" parameter to
+start() for compatibility with returnStart().
+
+* Have returnStart() put $this->enctype and
+$this->target into the <form> element's attributes.
+
+* register_long_arrays can now be Off.
+
+* Change checked to checked="checked".
+
+* Clean up nesting/indenting of HTML output.
+
+* Change while/list/each to foreach in
+returnSelect() and returnEnd().
+
+* Remove references from $entries parameter to
+returnSelectRow() and displaySelectRow().
+
+* returnEnd() no longer populates _fields
+for addBlank() items.
+
+* Fix $defined variable values in display():
+reset:  0 should have been 1
+submit: 0 should have been 2
+blank:  0 should have been 1
+radio:  3 should have been 1
+select: 4 should have been 5
+
+* Added tests.";s:1:"f";s:5:"12516";s:1:"g";s:42:"http://pear.php.net/get/HTML_Form-1.1.0RC1";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:20:"package.1.1.0RC1.xml";}}}

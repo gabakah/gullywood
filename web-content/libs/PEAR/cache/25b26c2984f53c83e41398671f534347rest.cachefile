@@ -1,0 +1,45 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:12:"/rest/p/pear";}s:8:"_content";s:4:"PEAR";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"1.6.2";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:6:"cellog";s:1:"s";s:16:"PEAR Base System";s:1:"d";s:1101:"The PEAR package contains:
+ * the PEAR installer, for creating, distributing
+   and installing packages
+ * the PEAR_Exception PHP5 error handling mechanism
+ * the PEAR_ErrorStack advanced error handling mechanism
+ * the PEAR_Error error handling mechanism
+ * the OS_Guess class for retrieving info about the OS
+   where PHP is running on
+ * the System class for quick handling of common operations
+   with files and directories
+ * the PEAR base class
+
+  Features in a nutshell:
+  * full support for channels
+  * pre-download dependency validation
+  * new package.xml 2.0 format allows tremendous flexibility while maintaining BC
+  * support for optional dependency groups and limited support for sub-packaging
+  * robust dependency support
+  * full dependency validation on uninstall
+  * remote install for hosts with only ftp access - no more problems with
+    restricted host installation
+  * full support for mirroring
+  * support for bundling several packages into a single tarball
+  * support for static dependencies on a url-based package
+  * support for custom file roles and installation tasks";s:2:"da";s:19:"2007-09-09 14:37:25";s:1:"n";s:1326:"Minor bugfix release
+* fix Bug #11420: warning on pecl (un)install with --register-only option [cellog]
+* fix Bug #11481: PEAR_PackageFile_Parser_v1 skips single-char directories [pmjones]
+* fix Bug #11517: Error : download directory "/var/cache/php-pear"
+  is not writeable. [remicollet]
+* fix Bug #11616: Incorrect equality operator used when comparing md5 check sums [robham]
+* fix Bug #11642: PEAR fails to authenticate when downloading deps from non-default
+  channels [timj]
+* fix Bug #11657: Installer generate bad "dirtree" using INSTALL_ROOT [remicollet]
+* fix Bug #11678: Registry.php getChannel() deadlocks [cellog]
+* fix Bug #11703: pear convert and package.xml with optional dependencies fails [cellog]
+* fix Bug #11754: Error at upgrade-all command run [cellog]
+* fix Bug #11861: uninstall of package did not delete directory created during install
+  of package [cellog]
+* fix Bug #11862: Notice: Array to string conversion in PEAR/PackageFile.php on line 433
+  [cellog]
+* fix Bug #11883: run-tests -u -p SomePackage should run the topmost
+  "AllTests.php" file [cellog]
+* fix Bug #11936: run-tests fails to preserve SYSTEMROOT environment variable [cellog]
+* fix Bug #12001: could not overwrite download_dir from environment variable? [hio]
+* fix Bug #12009: Registry.php another deadlocks in _lock [remicollet]";s:1:"f";s:6:"297794";s:1:"g";s:34:"http://pear.php.net/get/PEAR-1.6.2";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.1.6.2.xml";}}}

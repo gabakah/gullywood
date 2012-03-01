@@ -1,0 +1,23 @@
+a:14:{s:7:"attribs";a:4:{s:5:"xmlns";s:36:"http://pear.php.net/dtd/rest.release";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:11:"xmlns:xlink";s:28:"http://www.w3.org/1999/xlink";s:18:"xsi:schemaLocation";s:81:"http://pear.php.net/dtd/rest.release     http://pear.php.net/dtd/rest.release.xsd";}s:1:"p";a:2:{s:7:"attribs";a:1:{s:10:"xlink:href";s:12:"/rest/p/auth";}s:8:"_content";s:4:"Auth";}s:1:"c";s:12:"pear.php.net";s:1:"v";s:5:"1.4.2";s:2:"st";s:6:"stable";s:1:"l";s:11:"PHP License";s:1:"m";s:7:"aashley";s:1:"s";s:34:"Creating an authentication system.";s:1:"d";s:561:"The PEAR::Auth package provides methods for creating an authentication
+system using PHP.
+
+Currently it supports the following storage containers to read/write
+the login data:
+
+* All databases supported by the PEAR database layer
+* All databases supported by the MDB database layer
+* All databases supported by the MDB2 database layer
+* Plaintext files
+* LDAP servers
+* POP3 servers
+* IMAP servers
+* vpopmail accounts
+* RADIUS
+* SAMBA password files
+* SOAP (Using either PEAR SOAP package or PHP5 SOAP extension)
+* PEAR website
+* Kerberos V servers
+* SAP servers";s:2:"da";s:19:"2006-11-09 20:31:30";s:1:"n";s:215:"* Fixed Bug #9241: Callback functions where being passed a copy of
+  the login object instead of a reference to it under PHP4.
+* Fixed Bug #9286: Comparison of passwords and their hashes could give
+  false positive.";s:1:"f";s:5:"54204";s:1:"g";s:34:"http://pear.php.net/get/Auth-1.4.2";s:1:"x";a:1:{s:7:"attribs";a:1:{s:10:"xlink:href";s:17:"package.1.4.2.xml";}}}
